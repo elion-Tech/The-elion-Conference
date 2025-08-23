@@ -117,7 +117,7 @@ nav .nav-links{display:flex;gap:22px;list-style:none;margin:0;padding:0;align-it
 
 /* ===== Registration / Form Wrapper (custom scrollbar) ===== */
 .form-wrapper{max-width:980px;margin:0 auto;background:var(--card);border-radius:18px;box-shadow:0 16px 40px rgba(10,16,40,.12);padding:10px}
-.form-frame{height:2200px;overflow:auto;border-radius:12px}
+.form-frame{height:2200px;border-radius:12px}
 .form-frame iframe{width:100%;height:100%;border:0}
 /* custom scrollbar on the wrapper (works cross-domain) */
 .form-frame::-webkit-scrollbar{width:10px}
