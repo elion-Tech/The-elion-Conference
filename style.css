@@ -113,7 +113,7 @@ nav .nav-links{display:flex;gap:22px;list-style:none;margin:0;padding:0;align-it
 /* ===== Partner ===== */
 .partner-flex{display:grid;grid-template-columns:280px 1fr;gap:28px;align-items:center}
 .partner-logo img{max-width:100%;height:auto;display:block;border-radius:14px;box-shadow:0 10px 26px rgba(10,16,40,.15)}
-@media (max-width:860px){.partner-flex{grid-template-columns:1fr;text-align:center}}
+@media (max-width:860px){.partner-flex{grid-template-columns:1fr;text-align:center}; .alt{display: grid;}}
 
 /* ===== Registration / Form Wrapper (custom scrollbar) ===== */
 .form-wrapper{max-width:980px;margin:0 auto;background:var(--card);border-radius:18px;box-shadow:0 16px 40px rgba(10,16,40,.12);padding:10px}
@@ -141,4 +141,46 @@ nav .nav-links{display:flex;gap:22px;list-style:none;margin:0;padding:0;align-it
 .back-to-top.show{opacity:1;pointer-events:auto;transform:translateY(0)}
 
 
+.section-title {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.social-strip {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding-bottom: 15px;
+  scroll-snap-type: x mandatory;
+}
+
+.social-strip iframe {
+  flex: 0 0 320px; /* Fixed width for each post */
+  height: 500px; /* Adjust based on your content */
+  border-radius: 12px;
+  border: 0;
+  scroll-snap-align: start;
+}
+
+/* Optional: hide scrollbar but keep scroll functionality */
+.social-strip::-webkit-scrollbar {
+  height: 8px;
+}
+
+.social-strip::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
+}
+
+.social-strip::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+@media (max-width: 768px) {
+  .social-strip iframe {
+    flex: 0 0 280px;
+    height: 480px;
+  }
+}
 
