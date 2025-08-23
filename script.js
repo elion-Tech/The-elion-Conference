@@ -22,8 +22,8 @@ document.querySelectorAll('.nav-links a').forEach(link => {
     const navLinksEl = document.querySelector('.nav-links');
     navLinksEl && navLinksEl.classList.remove('active');
   });
-});
 
+});
 // ===== Mobile Menu Toggle (Injected Hamburger) =====
 (() => {
   const nav = document.querySelector('nav');
