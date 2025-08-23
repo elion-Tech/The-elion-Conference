@@ -125,8 +125,8 @@ nav .nav-links{display:flex;gap:22px;list-style:none;margin:0;padding:0;align-it
 .form-frame{scrollbar-width:thin;scrollbar-color:var(--royal) #e7eaff}
 
 /* ===== Social Strip (horizontal scroll with custom bar) ===== */
-.social-strip{display:flex;gap:16px;overflow:auto;padding:6px;border-radius:14px;background:#0a0f2c}
-.social-strip iframe{flex:0 0 320px;height:420px;border:0;border-radius:12px;background:#111}
+.social-strip{display:flex;gap:16px;padding:6px;border-radius:14px;}
+.social-strip iframe{flex:0 0 320px;height:420px;border:0;border-radius:12px;}
 .social-strip::-webkit-scrollbar{height:10px}
 .social-strip::-webkit-scrollbar-thumb{background:linear-gradient(90deg,var(--royal),var(--royal-2));border-radius:10px}
 
@@ -139,3 +139,6 @@ nav .nav-links{display:flex;gap:22px;list-style:none;margin:0;padding:0;align-it
 /* Back to Top */
 .back-to-top{position:fixed;right:18px;bottom:18px;width:44px;height:44px;border-radius:999px;border:0;background:var(--gold);color:#0b102b;display:grid;place-items:center;cursor:pointer;box-shadow:0 14px 30px rgba(0,0,0,.2);opacity:0;pointer-events:none;transform:translateY(10px);transition:opacity .25s, transform .25s}
 .back-to-top.show{opacity:1;pointer-events:auto;transform:translateY(0)}
+
+
+

@@ -124,3 +124,5 @@ document.querySelectorAll('.nav-links a').forEach(link => {
   btn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
   toggle();
 })();
+
+
