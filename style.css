@@ -89,7 +89,7 @@ nav .nav-links{display:flex;gap:22px;list-style:none;margin:0;padding:0;align-it
 /* ===== Flash Cards ===== */
 .keywords{background:#0a0f2c;color:#e8ecff;position:relative;overflow:hidden}
 .flashcard-stage{position:relative;height:220px;display:grid;place-items:center;perspective:1000px}
-.flash-card{position:absolute;font-weight:800;font-size:clamp(1.6rem,3.2vw,2.4rem);padding:22px 34px;border-radius:10px;background:linear-gradient(135deg,#1a237e,#283593);box-shadow:0 16px 40px rgba(0,0,0,.35);transform-style:preserve-3d;opacity:0;transition:opacity .7s ease, transform .7s ease}
+.flash-card{position:absolute;font-weight:800;font-size:clamp(1.6rem,3.2vw,2.4rem);padding:52px 34px;border-radius:10px;background:linear-gradient(135deg,#1a237e,#283593);box-shadow:0 16px 40px rgba(0,0,0,.35);transform-style:preserve-3d;opacity:0;transition:opacity .7s ease, transform .7s ease}
 
 /* ===== Counters ===== */
 .counters{background:#f1f4ff}
