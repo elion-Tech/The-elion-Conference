@@ -126,3 +126,57 @@ document.querySelectorAll('.nav-links a').forEach(link => {
 })();
 
 
+
+const slides = document.querySelectorAll('.slide');
+const dots = document.querySelectorAll('.dot');
+const prevBtn = document.querySelector('.prev');
+const nextBtn = document.querySelector('.next');
+
+let index = 0;
+let slideInterval = setInterval(nextSlide, 4000);
+
+function showSlide(i) {
+  slides.forEach(slide => slide.classList.remove('active'));
+  dots.forEach(dot => dot.classList.remove('active'));
+
+  slides[i].classList.add('active');
+  dots[i].classList.add('active');
+
+  const slider = document.querySelector('.slider');
+  slider.style.transform = `translateX(-${i * 100}%)`;
+}
+
+function nextSlide() {
+  index = (index + 1) % slides.length;
+  showSlide(index);
+}
+
+function prevSlide() {
+  index = (index - 1 + slides.length) % slides.length;
+  showSlide(index);
+}
+
+// Event Listeners
+nextBtn.addEventListener('click', () => {
+  nextSlide();
+  resetInterval();
+});
+
+prevBtn.addEventListener('click', () => {
+  prevSlide();
+  resetInterval();
+});
+
+dots.forEach((dot, i) => {
+  dot.addEventListener('click', () => {
+    index = i;
+    showSlide(index);
+    resetInterval();
+  });
+});
+
+function resetInterval() {
+  clearInterval(slideInterval);
+  slideInterval = setInterval(nextSlide, 1000);
+}
+
